@@ -36,7 +36,7 @@ dev_dependencies:
   simple_animations: ^5.0.0+2
   flutter_localizations:
     sdk: flutter
-  flutter_rounded_date_picker: ^3.0.1
+  flutter_rounded_date_picker: ^3.0.2
   font_awesome_flutter: ^10.1.0
   #carousel_slider: ^2.2.1
   flutter_slider_indicator: ^1.0.0
@@ -44,7 +44,7 @@ dev_dependencies:
   google_maps_flutter: ^2.2.0
  # syncfusion_flutter_datepicker: ^18.2.46-beta
   flutter_date_pickers: ^0.4.0
-  date_range_picker: ^1.0.5
+  date_range_picker: ^1.0.7
   flutter_launcher_icons: ^0.10.0
 
 

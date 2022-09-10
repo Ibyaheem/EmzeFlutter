@@ -6,14 +6,11 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-import 'package:airbnb_clone/Routes/HomePage.dart';
+void main() => runApp(MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: AddProperty(),
+    ));
 
-void main() => runApp(
-  MaterialApp(
-    debugShowCheckedModeBanner: false,
-    home : AddProperty(),
-  )
-);
 class AddProperty extends StatefulWidget {
   @override
   _AddPropertyState createState() => _AddPropertyState();
@@ -23,7 +20,6 @@ class _AddPropertyState extends State<AddProperty> {
   ItemDropDownButtonCategory _selectedCategory;
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
         backgroundColor: Colors.white70,
         body: SingleChildScrollView(
@@ -33,11 +29,10 @@ class _AddPropertyState extends State<AddProperty> {
               Container(
                 decoration: BoxDecoration(
                     color: Color(0xff3366cc),
-                    borderRadius: BorderRadius.all(Radius.circular(20))
-                ),
+                    borderRadius: BorderRadius.all(Radius.circular(20))),
                 width: MediaQuery.of(context).size.width,
                 height: 250,
-                margin: EdgeInsets.symmetric(horizontal: 20,vertical: 10),
+                margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
                 child: Icon(
                   Icons.add_circle_outline,
                   size: 35,
@@ -50,8 +45,12 @@ class _AddPropertyState extends State<AddProperty> {
                     padding: EdgeInsets.symmetric(horizontal: 40),
                     child: Align(
                       alignment: Alignment.topLeft,
-                      child:Text("Title",
-                        style: TextStyle(color: Colors.black54,fontSize: 17,fontWeight: FontWeight.w500),
+                      child: Text(
+                        "Title",
+                        style: TextStyle(
+                            color: Colors.black54,
+                            fontSize: 17,
+                            fontWeight: FontWeight.w500),
                       ),
                     ),
                   ),
@@ -73,15 +72,21 @@ class _AddPropertyState extends State<AddProperty> {
                   )
                 ],
               ),
-              SizedBox(height: 25,),
+              SizedBox(
+                height: 25,
+              ),
               Column(
                 children: <Widget>[
                   Padding(
                     padding: EdgeInsets.symmetric(horizontal: 40),
                     child: Align(
                       alignment: Alignment.topLeft,
-                      child:Text("Description",
-                        style: TextStyle(color: Colors.black54,fontSize: 17,fontWeight: FontWeight.w500),
+                      child: Text(
+                        "Description",
+                        style: TextStyle(
+                            color: Colors.black54,
+                            fontSize: 17,
+                            fontWeight: FontWeight.w500),
                       ),
                     ),
                   ),
@@ -89,7 +94,8 @@ class _AddPropertyState extends State<AddProperty> {
                     padding: EdgeInsets.symmetric(horizontal: 40),
                     child: TextField(
                       decoration: InputDecoration(
-                        hintText: "villa avec une sortie sur la plage familiale SIDI BOUZID ",
+                        hintText:
+                            "villa avec une sortie sur la plage familiale SIDI BOUZID ",
                         hintStyle: TextStyle(color: Colors.grey),
                         border: InputBorder.none,
                       ),
@@ -103,15 +109,21 @@ class _AddPropertyState extends State<AddProperty> {
                   )
                 ],
               ),
-              SizedBox(height: 25,),
+              SizedBox(
+                height: 25,
+              ),
               Column(
                 children: <Widget>[
                   Padding(
                     padding: EdgeInsets.symmetric(horizontal: 40),
                     child: Align(
                       alignment: Alignment.topLeft,
-                      child:Text("Prix",
-                        style: TextStyle(color: Colors.black54,fontSize: 17,fontWeight: FontWeight.w500),
+                      child: Text(
+                        "Prix",
+                        style: TextStyle(
+                            color: Colors.black54,
+                            fontSize: 17,
+                            fontWeight: FontWeight.w500),
                       ),
                     ),
                   ),
@@ -133,15 +145,21 @@ class _AddPropertyState extends State<AddProperty> {
                   )
                 ],
               ),
-              SizedBox(height: 25,),
+              SizedBox(
+                height: 25,
+              ),
               Column(
                 children: <Widget>[
                   Padding(
                     padding: EdgeInsets.symmetric(horizontal: 40),
                     child: Align(
                       alignment: Alignment.topLeft,
-                      child:Text("Surface",
-                        style: TextStyle(color: Colors.black54,fontSize: 17,fontWeight: FontWeight.w500),
+                      child: Text(
+                        "Surface",
+                        style: TextStyle(
+                            color: Colors.black54,
+                            fontSize: 17,
+                            fontWeight: FontWeight.w500),
                       ),
                     ),
                   ),
@@ -163,15 +181,21 @@ class _AddPropertyState extends State<AddProperty> {
                   )
                 ],
               ),
-              SizedBox(height: 25,),
+              SizedBox(
+                height: 25,
+              ),
               Column(
                 children: <Widget>[
                   Padding(
                     padding: EdgeInsets.symmetric(horizontal: 40),
                     child: Align(
                       alignment: Alignment.topLeft,
-                      child:Text("Nombre de chambre",
-                        style: TextStyle(color: Colors.black54,fontSize: 17,fontWeight: FontWeight.w500),
+                      child: Text(
+                        "Nombre de chambre",
+                        style: TextStyle(
+                            color: Colors.black54,
+                            fontSize: 17,
+                            fontWeight: FontWeight.w500),
                       ),
                     ),
                   ),
@@ -193,15 +217,21 @@ class _AddPropertyState extends State<AddProperty> {
                   )
                 ],
               ),
-              SizedBox(height: 25,),
+              SizedBox(
+                height: 25,
+              ),
               Column(
                 children: <Widget>[
                   Padding(
                     padding: EdgeInsets.symmetric(horizontal: 40),
                     child: Align(
                       alignment: Alignment.topLeft,
-                      child:Text("nombre de façades",
-                        style: TextStyle(color: Colors.black54,fontSize: 17,fontWeight: FontWeight.w500),
+                      child: Text(
+                        "nombre de façades",
+                        style: TextStyle(
+                            color: Colors.black54,
+                            fontSize: 17,
+                            fontWeight: FontWeight.w500),
                       ),
                     ),
                   ),
@@ -223,7 +253,9 @@ class _AddPropertyState extends State<AddProperty> {
                   )
                 ],
               ),
-              SizedBox(height: 25,),
+              SizedBox(
+                height: 25,
+              ),
               Column(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: <Widget>[
@@ -231,14 +263,18 @@ class _AddPropertyState extends State<AddProperty> {
                     padding: EdgeInsets.symmetric(horizontal: 40),
                     child: Align(
                       alignment: Alignment.topLeft,
-                      child:Text("Location",
-                        style: TextStyle(color: Colors.black54,fontSize: 17,fontWeight: FontWeight.w500),
+                      child: Text(
+                        "Location",
+                        style: TextStyle(
+                            color: Colors.black54,
+                            fontSize: 17,
+                            fontWeight: FontWeight.w500),
                       ),
                     ),
                   ),
                   Padding(
                     padding: EdgeInsets.symmetric(horizontal: 40),
-                    child: FlatButton(
+                    child: MaterialButton(
                       color: Color(0xff3366cc),
                       textColor: Colors.white,
                       disabledColor: Colors.grey,
@@ -265,15 +301,21 @@ class _AddPropertyState extends State<AddProperty> {
                   )
                 ],
               ),
-              SizedBox(height: 25,),
+              SizedBox(
+                height: 25,
+              ),
               Column(
                 children: <Widget>[
                   Padding(
                     padding: EdgeInsets.symmetric(horizontal: 40),
                     child: Align(
                       alignment: Alignment.topLeft,
-                      child:Text("Catégorie",
-                        style: TextStyle(color: Colors.black54,fontSize: 17,fontWeight: FontWeight.w500),
+                      child: Text(
+                        "Catégorie",
+                        style: TextStyle(
+                            color: Colors.black54,
+                            fontSize: 17,
+                            fontWeight: FontWeight.w500),
                       ),
                     ),
                   ),
@@ -282,25 +324,30 @@ class _AddPropertyState extends State<AddProperty> {
                       child: DropdownButton<ItemDropDownButtonCategory>(
                         value: _selectedCategory,
                         hint: Text("Selectionner un element"),
-                        onChanged: (ItemDropDownButtonCategory Value){
+                        onChanged: (ItemDropDownButtonCategory Value) {
                           setState(() {
                             _selectedCategory = Value;
                           });
                         },
-                        items: ItemDropDownButtonCategory.list.map((ItemDropDownButtonCategory item){
+                        items: ItemDropDownButtonCategory.list
+                            .map((ItemDropDownButtonCategory item) {
                           return DropdownMenuItem<ItemDropDownButtonCategory>(
                             value: item,
                             child: Row(
                               children: <Widget>[
                                 item.icon,
-                                SizedBox(width: 10,),
-                                Text(item.label,style: TextStyle(color: Colors.black),)
+                                SizedBox(
+                                  width: 10,
+                                ),
+                                Text(
+                                  item.label,
+                                  style: TextStyle(color: Colors.black),
+                                )
                               ],
                             ),
                           );
                         }).toList(),
-                      )
-                  ),
+                      )),
                   Container(
                     margin: EdgeInsets.symmetric(horizontal: 20),
                     width: MediaQuery.of(context).size.width,
@@ -309,7 +356,7 @@ class _AddPropertyState extends State<AddProperty> {
                   )
                 ],
               ),
-              FlatButton(
+              MaterialButton(
                 color: Color(0xff3366cc),
                 textColor: Colors.white,
                 disabledColor: Colors.grey,
@@ -326,7 +373,6 @@ class _AddPropertyState extends State<AddProperty> {
               ),
             ],
           ),
-        )
-    );
+        ));
   }
 }
