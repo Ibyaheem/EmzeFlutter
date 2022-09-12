@@ -53,7 +53,7 @@ class _ProfileState extends State<Profile> {
                         "Ebrahim Sameh",
                         style: TextStyle(
                             fontWeight: FontWeight.bold,
-                            fontSize: 24,
+                            fontSize: 20,
                             color: Colors.black87),
                       ),
                     ],
@@ -104,7 +104,7 @@ class _ProfileState extends State<Profile> {
                 children: <Widget>[
                   Expanded(
                     child: Text(
-                      "Personal Information",
+                      "Personal information",
                       style: TextStyle(
                           color: Colors.black,
                           fontSize: 17,
@@ -137,7 +137,7 @@ class _ProfileState extends State<Profile> {
                 children: <Widget>[
                   Expanded(
                     child: Text(
-                      "Notifications",
+                      "Discounts",
                       style: TextStyle(
                           color: Colors.black,
                           fontSize: 18,
@@ -185,6 +185,120 @@ class _ProfileState extends State<Profile> {
                   ),
                   Icon(
                     Icons.add_circle_outline,
+                  ),
+                ],
+              ),
+            ),
+          ),
+          Container(
+            margin: EdgeInsets.symmetric(horizontal: 30),
+            decoration: BoxDecoration(
+              color: Colors.black12,
+            ),
+            width: 50,
+            height: 1,
+          ),
+          MaterialButton(
+            splashColor: Colors.grey,
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => AddProperty()),
+              );
+            },
+            child: Padding(
+              padding: EdgeInsets.all(15),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                  Expanded(
+                    child: Text(
+                      "List your car",
+                      style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 18,
+                          fontWeight: FontWeight.w300),
+                      overflow: TextOverflow.ellipsis,
+                    ),
+                  ),
+                  Icon(
+                    Icons.add,
+                  ),
+                ],
+              ),
+            ),
+          ),
+          Container(
+            margin: EdgeInsets.symmetric(horizontal: 30),
+            decoration: BoxDecoration(
+              color: Colors.black12,
+            ),
+            width: 50,
+            height: 1,
+          ),
+          MaterialButton(
+            splashColor: Colors.grey,
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => AddProperty()),
+              );
+            },
+            child: Padding(
+              padding: EdgeInsets.all(15),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                  Expanded(
+                    child: Text(
+                      "Places history",
+                      style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 18,
+                          fontWeight: FontWeight.w300),
+                      overflow: TextOverflow.ellipsis,
+                    ),
+                  ),
+                  Icon(
+                    Icons.history,
+                  ),
+                ],
+              ),
+            ),
+          ),
+          Container(
+            margin: EdgeInsets.symmetric(horizontal: 30),
+            decoration: BoxDecoration(
+              color: Colors.black12,
+            ),
+            width: 50,
+            height: 1,
+          ),
+          MaterialButton(
+            splashColor: Colors.grey,
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => AddProperty()),
+              );
+            },
+            child: Padding(
+              padding: EdgeInsets.all(15),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                  Expanded(
+                    child: Text(
+                      "Cars history",
+                      style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 18,
+                          fontWeight: FontWeight.w300),
+                      overflow: TextOverflow.ellipsis,
+                    ),
+                  ),
+                  Icon(
+                    Icons.history,
                   ),
                 ],
               ),

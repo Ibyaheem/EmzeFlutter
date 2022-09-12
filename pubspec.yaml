@@ -48,6 +48,7 @@ dev_dependencies:
   flutter_launcher_icons: ^0.10.0
 
 
+
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
@@ -65,7 +66,11 @@ flutter:
      - assets/images/properties/
      - assets/images/social_media/
      - assets/images/Illustrations/
-     - assets/
+     - assets/dmoney.jpg
+     - assets/visa.jpg
+     - assets/wf.jpg
+     - assets/icon.jpg
+     - assets/profilePicture.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 
@@ -95,4 +100,5 @@ flutter:
 flutter_icons:
   android: true
   ios: true
-  image_path: "assets/images/logo1.png"
+  image_path: "assets/icon.jpg"
+

@@ -1,69 +1,36 @@
 import 'dart:ui';
+
 import 'package:airbnb_clone/Routes/Ongoing.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
 
-import 'package:airbnb_clone/Routes/HomePage.dart';
-
-import 'Constants/Constants.dart';
-import 'Routes/login.dart';
+import 'Routes/HomePage.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
-    systemNavigationBarColor:Colors.transparent, // navigation bar color
+    systemNavigationBarColor: Colors.transparent, // navigation bar color
     statusBarColor: Color(0xAA00A699), // status bar color
-
   ));
-  runApp(
-      MaterialApp(
-        debugShowCheckedModeBanner: false,
-        home : LoginPage(),
-        theme: ThemeData(
-            appBarTheme: AppBarTheme(
-                color: Colors.white
-            ),
-            fontFamily: 'Poppins'
-        ),
-      )
-  );
+  runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
+    home: HomePage(),
+    theme: ThemeData(
+        appBarTheme: AppBarTheme(color: Colors.white), fontFamily: 'Poppins'),
+  ));
 }
+
 class LoginPage extends StatefulWidget {
   @override
-
   _LoginPageState createState() => _LoginPageState();
 }
+
 class _LoginPageState extends State<LoginPage> {
-
-
   @override
   Widget build(BuildContext context) {
     return Ongoing();
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*  @override
     Widget build(BuildContext context) {
