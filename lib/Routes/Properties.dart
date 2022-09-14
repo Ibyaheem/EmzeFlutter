@@ -37,7 +37,6 @@ class _PropertiesState extends State<Properties> {
     return Scaffold(
       body: SafeArea(
         child: ListView(
-          scrollDirection: Axis.vertical,
           children: <Widget>[
             for (Widget prop in properties) prop,
           ],
