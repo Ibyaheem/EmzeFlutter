@@ -1,4 +1,4 @@
- 3. Setup the firebase app
+Simple Booking App
 -------------
 You'll need to create a Firebase instance. Follow the instructions at https://console.firebase.google.com.
 - Once your Firebase instance is created, you'll need to enable anonymous authentication.
